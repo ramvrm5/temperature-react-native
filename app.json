@@ -18,13 +18,18 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.temperatureService"
+      "bundleIdentifier": "com.temperatureService",
+      "infoPlist": {
+        "UIBackgroundModes": ["location", "fetch"]
+      }
     },
     "android": {
+      "permissions": ["ACCESS_BACKGROUND_LOCATION","CAMERA","MEDIA_LIBRARY_WRITE_ONLY","MEDIA_LIBRARY","READ_EXTERNAL_STORAGE","INTERNET","WRITE_EXTERNAL_STORAGE"],
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.temperatureService"
     },
     "web": {
       "favicon": "./assets/favicon.png"
